@@ -17,6 +17,8 @@ data['main_industry'] = data['main_industry'].str.replace('&', 'and')
 data.drop_duplicates(keep='first',inplace=True)
 data['countries'] = data['countries'].str.split(';',expand=True)[0]
 
+st.title("GLOBAL BILIONARES DASHBOARD")
+
 # side bar components
 with st.sidebar:
     # select
